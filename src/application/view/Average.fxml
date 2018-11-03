@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AverageController">
+   <children>
+      <Pane layoutX="2.0" layoutY="7.0" prefHeight="117.0" prefWidth="592.0">
+         <children>
+            <Button fx:id="homeButton" layoutY="8.0" mnemonicParsing="false" onAction="#handleHomeButton" style="-fx-background-color: black;" text="Home" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="13.0" prefHeight="55.0" prefWidth="279.0" text="Average">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="158.0" layoutY="60.0" prefHeight="17.0" prefWidth="244.0" text="UTSA Computer Science" />
+         </children>
+      </Pane>
+      <Pane layoutX="8.0" layoutY="179.0" prefHeight="374.0" prefWidth="585.0">
+         <children>
+            <Label alignment="CENTER" layoutX="90.0" layoutY="10.0" prefHeight="39.0" prefWidth="379.0" text="Enter values to compute an average">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="103.0" layoutY="41.0" prefHeight="17.0" prefWidth="379.0" text="(separate each value witn a space)" />
+            <TextField fx:id="valuesTextField" layoutX="95.0" layoutY="65.0" prefHeight="27.0" prefWidth="401.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="answerTextField" layoutX="197.0" layoutY="316.0" />
+            <Button fx:id="resultButton" layoutX="230.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleResultButton" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: black;" text="Result" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="warningLabel" alignment="CENTER" layoutX="125.0" layoutY="105.0" prefHeight="82.0" prefWidth="310.0" text="Not formatted correctly, please try again." textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

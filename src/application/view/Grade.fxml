@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GradeController">
+   <children>
+      <Pane layoutX="2.0" layoutY="7.0" prefHeight="117.0" prefWidth="592.0">
+         <children>
+            <Button fx:id="homeButton" layoutY="8.0" mnemonicParsing="false" onAction="#handleHomeButton" style="-fx-background-color: black;" text="Home" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="13.0" prefHeight="55.0" prefWidth="279.0" text="Grade Calculator">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="158.0" layoutY="60.0" prefHeight="17.0" prefWidth="244.0" text="UTSA Computer Science" />
+         </children>
+      </Pane>
+      <Pane layoutX="8.0" layoutY="124.0" prefHeight="475.0" prefWidth="585.0">
+         <children>
+            <TextField fx:id="labsTextField" layoutX="488.0" layoutY="74.0" prefHeight="29.0" prefWidth="54.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="numAnswerTextField" layoutX="179.0" layoutY="421.0" prefHeight="27.0" prefWidth="86.0">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button fx:id="resultButton" layoutX="224.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleCalculateButton" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: black;" text="Calculate" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="warningLabel" alignment="CENTER" layoutX="10.0" layoutY="301.0" prefHeight="82.0" prefWidth="566.0" text="Percentages not formatted correctly or do not equal 100. Please try again." textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="letterAnswerTextField" layoutX="293.0" layoutY="421.0" prefHeight="27.0" prefWidth="75.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Slider fx:id="labsSlider" layoutX="139.0" layoutY="83.0" prefHeight="15.0" prefWidth="335.0" showTickLabels="true" showTickMarks="true" />
+            <Label layoutX="548.0" layoutY="74.0" text="\%">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="548.0" layoutY="122.0" text="\%">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Slider fx:id="quizzesSlider" layoutX="139.0" layoutY="131.0" prefHeight="15.0" prefWidth="335.0" showTickLabels="true" showTickMarks="true" />
+            <TextField fx:id="quizzesTextField" layoutX="488.0" layoutY="122.0" prefHeight="29.0" prefWidth="54.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="551.0" layoutY="171.0" text="\%">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Slider fx:id="teamSlider" layoutX="139.0" layoutY="183.0" prefHeight="15.0" prefWidth="335.0" showTickLabels="true" showTickMarks="true" />
+            <TextField fx:id="teamTextField" layoutX="488.0" layoutY="172.0" prefHeight="29.0" prefWidth="54.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="548.0" layoutY="222.0" text="\%">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Slider fx:id="midtermSlider" layoutX="139.0" layoutY="231.0" prefHeight="15.0" prefWidth="335.0" showTickLabels="true" showTickMarks="true" />
+            <TextField fx:id="midtermTextField" layoutX="488.0" layoutY="222.0" prefHeight="29.0" prefWidth="54.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="74.0" prefHeight="17.0" prefWidth="100.0" text="Labs:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="122.0" prefHeight="17.0" prefWidth="100.0" text="Quizzes:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-6.0" layoutY="222.0" prefHeight="23.0" prefWidth="134.0" text="Midterm Exam:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutY="174.0" prefHeight="23.0" prefWidth="128.0" text="Team Project:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-7.0" layoutY="271.0" prefHeight="23.0" prefWidth="134.0" text="Final Exam:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="finalTextField" layoutX="487.0" layoutY="271.0" prefHeight="29.0" prefWidth="54.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Slider fx:id="finalSlider" layoutX="138.0" layoutY="280.0" prefHeight="15.0" prefWidth="335.0" showTickLabels="true" showTickMarks="true" />
+            <Label layoutX="547.0" layoutY="271.0" text="\%">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
